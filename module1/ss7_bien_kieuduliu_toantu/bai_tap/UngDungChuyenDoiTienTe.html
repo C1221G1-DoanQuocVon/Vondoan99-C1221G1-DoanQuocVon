@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th> Amount</th>
+        <th></th>
+        <th> From currency</th>
+        <th></th>
+        <th> To currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="dauvao"></td>
+        <td></td>
+        <td><select name="" id="select1">
+            <option value="VND">Vnd</option>
+            <option value="USD">Usd</option>
+        </select></td>
+        <td></td>
+        <td><select name="" id="select2">
+            <option value="VND">Vnd</option>
+            <option value="USD">usd</option>
+        </select></td>
+        <td></td>
+        <td>
+            <button type="button" onclick="Doitiente()">Convert</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function Doitiente() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let from = document.getElementById('select1').value;
+        let to = document.getElementById('select2').value;
+        if (from === to) {
+            alert(giatrivao)
+        }
+        else if (from === "VND" && to === "USD") {
+            alert(giatrivao / 23000)}
+        else
+        {alert(giatrivao * 23000)
+        }
+    }
+</script>
+</body>
+</html>

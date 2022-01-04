@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bien kieu du lieu</title>
+</head>
+<body>
+<script>
+    var inputVatly;
+    var inputHoa;
+    var inputSinh;
+    inputVatly = prompt("Enter the Vatly");
+    inputHoa = prompt("Enter the Hoa");
+    inputSinh = prompt("Enter the Sinh");
+    var Vatly = parseInt(inputVatly);
+    var Hoa = parseInt(inputHoa);
+    var Sinh = parseInt(inputSinh);
+    var Area = (Vatly + Hoa + Sinh)/3;
+    document.write("Điểm TB = " + Area);
+</script><br>
+<script>
+    var inputC;
+    inputC = prompt("Enter the C");
+    var C = parseInt(inputC);
+    var Area = (9*C-160)/5;
+    document.write("F = " + Area);
+</script><br>
+<script>
+    var inputR;
+    var P = 3.14;
+    var R = parseInt(prompt("Enter the R"));
+    var Area = P*Math.pow(R, 2);
+    var Area1 = P*2*R;
+    document.write("Dien tich = " + Area );
+    document.write("Chu vi = " + Area1);
+</script>
+</body>
+</html>
