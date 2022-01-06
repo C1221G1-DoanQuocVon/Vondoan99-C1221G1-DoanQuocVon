@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch case</title>
+</head>
+<body>
+<input type="number" id="number">
+<button  onclick="tinh()" type="button">Tính số ngày</button>
+<p id="display"></p>
+<script>
+    function tinh() {
+        let nhap = parseInt(document.getElementById("number").value);
+        switch (nhap) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+               document.getElementById("display").innerText =  "Tháng " + nhap + " có 31 ngày";
+        }
+    }
+</script>
+</body>
+</html>

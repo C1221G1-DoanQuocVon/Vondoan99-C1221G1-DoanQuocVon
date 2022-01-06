@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If Else If</title>
+</head>
+<body>
+<script>
+        let tk = prompt('Enter the admin');
+   if (tk == 'Admin') {
+       let ps = prompt('Enter the pasword', '');
+       if (ps == 'TheMaster') {
+           alert('Welcome!');
+       } else if (ps = null) {
+           alert('Canceled');
+       } else {
+           alert('Wrong password');
+       }
+   }else if (tk == 'null'){ //phải có nháy mới nhận chuỗi
+        alert('canceled');
+        }
+    else {
+       alert('I don’t know you');
+   } //sau else phải có ngoặc nhọn
+</script>
+</body>
+</html>
