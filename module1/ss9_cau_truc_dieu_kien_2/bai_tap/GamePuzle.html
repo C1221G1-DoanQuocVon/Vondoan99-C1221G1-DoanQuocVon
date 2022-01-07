@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzle</title>
+</head>
+<body>
+<div>
+    <img src="https://image.thanhnien.vn/w1024/Uploaded/2022/unvjxbf/2015_11_07/gau-truc-anh-reuters_dajc.jpg" id="image1" alt="Image 1" onclick="changPic(this)">
+</div>
+<div>
+    <img src="https://genk.mediacdn.vn/k:2016/1-140808122043-01-selfie-monkey-0808-exlarge-169-1454603234252-crop-1454603249987-crop-1454603268876-1454752124621/8-su-thiet-it-ai-biet-ve-loai-khi-sinh-vat-nhi-nho-nhat-hanh-tinh.jpeg" id="image2" alt="Image 2" onclick="changPic(this)">
+</div>
+<div>
+    <img src="https://image.thanhnien.vn/w1024/Uploaded/2022/unvjxbf/2015_11_07/gau-truc-anh-reuters_dajc.jpg" id="image3" alt="Image 3" onclick="changPic(this)">
+</div>
+<div>
+    <img src="https://image.thanhnien.vn/w1024/Uploaded/2022/unvjxbf/2015_11_07/gau-truc-anh-reuters_dajc.jpg" id="image4" alt="Image 4" onclick="changPic(this)">
+</div>
+<div>
+    <img src="https://petmaster.vn/petroom/wp-content/uploads/2020/03/cho-bull-phap-3.jpg" id="image5" alt="Image 5" onclick="changPic(this)">
+</div>
+<p id="result" style="border: none;text-align: center"></p>
+<script>
+    function changPic(element) {
+        if(element.src===
+        'https://image.thanhnien.vn/w1024/Uploaded/2022/unvjxbf/2015_11_07/gau-truc-anh-reuters_dajc.jpg'){
+            element.src='https://genk.mediacdn.vn/k:2016/1-140808122043-01-selfie-monkey-0808-exlarge-169-1454603234252-crop-1454603249987-crop-1454603268876-1454752124621/8-su-thiet-it-ai-biet-ve-loai-khi-sinh-vat-nhi-nho-nhat-hanh-tinh.jpeg'
+        }else if(element.src==='https://genk.mediacdn.vn/k:2016/1-140808122043-01-selfie-monkey-0808-exlarge-169-1454603234252-crop-1454603249987-crop-1454603268876-1454752124621/8-su-thiet-it-ai-biet-ve-loai-khi-sinh-vat-nhi-nho-nhat-hanh-tinh.jpeg'){
+            element.src='https://petmaster.vn/petroom/wp-content/uploads/2020/03/cho-bull-phap-3.jpg'
+        }else {
+            element.src='https://image.thanhnien.vn/w1024/Uploaded/2022/unvjxbf/2015_11_07/gau-truc-anh-reuters_dajc.jpg'
+        }
+    }
+    let image1 = document.getElementById('image1').src;
+    let image2 = document.getElementById('image2').src;
+    let image3 = document.getElementById('image3').src;
+    let image4 = document.getElementById('image4').src;
+    let image5 = document.getElementById('image5').src;
+    if(image1===image2&&image2===image3&&image3===image4&&image4===image5&&image5===image1){
+        let a = document.getElementsByTagName("div");
+        for (let elementA of a) {
+            elementA.style.backgroundColor = 'lightblue';
+        }
+        document.getElementById('result').innerText = 'WINNER'
+    }else{
+        let a = document.getElementsByTagName("div");
+        for (let elementA of a) {
+            elementA.style.backgroundColor = 'transparent';
+        }
+        document.getElementById('result').innerText = '';
+    }
+</script>
+</body>
+</html>
